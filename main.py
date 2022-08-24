@@ -39,8 +39,8 @@ def get_count():
 
 
 def get_exam_count():
-    exam_time = datetime.strptime(exam_date, "%Y-%m-%d") - today
-    return exam_time.days
+    exam_date = datetime.strptime(exam_date, "%Y-%m-%d") - today
+    return exam_date.days
 
 
 def get_birthday():
@@ -84,7 +84,7 @@ data = {"date": {"value": today1, "color": get_random_color()},
         "temperature1": {"value": temperature, "color": get_random_color()},
         "highest1": {"value": highest, "color": get_random_color()},
         "lowest1": {"value": lowest, "color": get_random_color()},
-        "exam_time": {"value": get_exam_count(), "color": get_random_color()},
+        "exam_date": {"value": get_exam_count(), "color": get_random_color()},
         "birthday_left": {"value": get_birthday(), "color": get_random_color()},
         "birthday_left1": {"value": get_birthday1(), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}}
