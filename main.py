@@ -14,7 +14,7 @@ city1 = os.environ['CITY1']
 birthday = os.environ['BIRTHDAY']
 birthday1 = os.environ['BIRTHDAY1']
 start_date = os.environ['START_DATE']
-#exam_date = os.environ['EXAM_DATE']
+exam_date = os.environ['EXAM_DATE']
 
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
@@ -84,6 +84,7 @@ data = {"date": {"value": today1, "color": get_random_color()},
         "temperature1": {"value": temperature, "color": get_random_color()},
         "highest1": {"value": highest, "color": get_random_color()},
         "lowest1": {"value": lowest, "color": get_random_color()},
+        "exam_date": {"value": get_exam_count(), "color": get_random_color()},
         "birthday_left": {"value": get_birthday(), "color": get_random_color()},
         "birthday_left1": {"value": get_birthday1(), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}}
