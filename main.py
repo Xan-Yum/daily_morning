@@ -72,9 +72,19 @@ client = WeChatClient(app_id, app_secret)
 
 wm = WeChatMessage(client)
 ci, wea, temperature, highest, lowest, ci1, wea1, temperature1, highest1, lowest1 = get_weather()
-data = {"date": {"value": today1, "color": get_random_color()},
+data = {"date_str": {'value': '📅日期：'},
+        "city_str": {'value': '🏙城市：'},
+        "weather_str": {"value": '🌤天气：'},
+        "temperature_str": {'value': '🌡当前温度：'},
+        "lowest_str": {'value': '🌡气温：'},
+        "exam_date_str": {'value': '📕距离考试还有：'},
+        "love_days_str": {'value': '🥰我们已经相爱'},
+        "birthday_str1": {'value': '🎂距离我的生日还有：'},
+        "birthday_str2": {'value': '🎂距离你的生日还有：'},
+
+        "date": {"value": today1, "color": get_random_color()},
         "city": {"value": ci, "color": get_random_color()},
-        "weather": {"value": wea,"color": get_random_color()},
+        "weather": {"value": wea, "color": get_random_color()},
         "temperature": {"value": temperature, "color": get_random_color()},
         "highest": {"value": highest, "color": get_random_color()},
         "lowest": {"value": lowest, "color": get_random_color()},
@@ -85,8 +95,8 @@ data = {"date": {"value": today1, "color": get_random_color()},
         "highest1": {"value": highest, "color": get_random_color()},
         "lowest1": {"value": lowest, "color": get_random_color()},
         "exam_date": {"value": get_exam_count(), "color": get_random_color()},
-        "birthday_left": {"value": get_birthday(), "color": get_random_color()},
-        "birthday_left1": {"value": get_birthday1(), "color": get_random_color()},
+        "birthday": {"value": get_birthday(), "color": get_random_color()},
+        "birthday1": {"value": get_birthday1(), "color": get_random_color()},
         "words": {"value": get_words(), "color": get_random_color()}}
 
 count = 0
