@@ -32,19 +32,18 @@ Github Actions 的定时任务，在 workflow 的定义是 0 0 * * *，是 UTC �
 
 示例模板：
 
-{{ date_str.DATA }}{{ date.DATA }}
-{{ city_str.DATA }}{{ city.DATA }}
-{{ weather_str.DATA }}{{ weather.DATA }}
-{{ temperature_str.DATA }}{{ temperature.DATA }}℃
-{{ lowest_str.DATA }}{{ lowest.DATA }}℃ ~ {{ highest.DATA }}℃
-{{ city_str.DATA }}{{ city1.DATA }}
-{{ weather_str.DATA }}{{ weather1.DATA }}
-{{ temperature_str.DATA }}{{ temperature1.DATA }}℃
-{{ lowest_str.DATA }}{{ lowest1.DATA }}℃ ~ {{ highest1.DATA }}℃
-{{ exam_date_str.DATA }}{{ exam_date.DATA }} 天
-{{ love_days_str.DATA }}{{ love_days.DATA }} 天啦
-{{ birthday_str1.DATA }}{{ birthday.DATA }} 天
-{{ birthday_str2.DATA }}{{ birthday1.DATA }} 天
+日期：{{ date.DATA }}
+城市：{{ city.DATA }}
+天气：{{ weather.DATA }}
+当前温度：{{ temperature.DATA }}℃
+气温：{{ lowest.DATA }}℃ ~ {{ highest.DATA }}℃
+城市：{{ city1.DATA }}
+天气：{{ weather1.DATA }}
+当前温度：{{ temperature1.DATA }}℃
+气温：{{ lowest1.DATA }}℃ ~ {{ highest1.DATA }}℃
+距离考试还有：{{ exam_date.DATA }} 天
+距离我的生日还有：{{ birthday.DATA }} 天
+距离你的生日还有：{{ birthday1.DATA }} 天
 {{ words.DATA }}
 
 需定义字段：
