@@ -41,7 +41,7 @@ Github Actions 的定时任务，在 workflow 的定义是 0 0 * * *，是 UTC �
 天气：{{weather1.DATA }}
 当前温度：{{ temperature1.DATA }}℃
 气温：{{ lowest1.DATA }}℃ ~ {{ highest1.DATA }}℃
-距离考试还有 {{ exam_time.DATA }} 天
+距离考试还有 {{ exam_date.DATA }} 天
 我们已经相恋 {{ love_days.DATA }} 天啦
 距离我的生日还有：{{ birthday_left.DATA }} 天
 距离你的生日还有：{{ birthday_left1.DATA }} 天
