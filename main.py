@@ -39,8 +39,8 @@ def get_count():
 
 
 def get_exam_count():
-    exam_date = datetime.strptime(exam_date, "%Y-%m-%d") - today
-    return exam_date.days
+    countdown = datetime.strptime(exam_date, "%Y-%m-%d") - today
+    return countdown.days
 
 
 def get_birthday():
