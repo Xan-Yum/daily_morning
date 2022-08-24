@@ -32,5 +32,4 @@ jobs:
       START_DATE: ${{secrets.START_DATE}}
       CITY1: ${{secrets.CITY1}}
       BIRTHDAY1: ${{secrets.BIRTHDAY1}}
-      START_DATE1: ${{secrets.START_DATE1}}
       EXAM_TIME: ${{secrets.EXAM_TIME}}
