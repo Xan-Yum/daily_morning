@@ -28,8 +28,8 @@ jobs:
       TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
       USER_ID: ${{ secrets.USER_ID }}
       CITY: ${{ secrets.CITY }}
-      BIRTHDAY: ${{secrets.BIRTHDAY}}
-      START_DATE: ${{secrets.START_DATE}}
-      CITY1: ${{secrets.CITY1}}
-      BIRTHDAY1: ${{secrets.BIRTHDAY1}}
-      EXAM_TIME: ${{secrets.EXAM_TIME}}
+      BIRTHDAY: ${{ secrets.BIRTHDAY }}
+      START_DATE: ${{ secrets.START_DATE }}
+      CITY1: ${{ secrets.CITY1 }}
+      BIRTHDAY1: ${{ secrets.BIRTHDAY1 }}
+      EXAM_DATE: ${{ secrets.EXAM_DATE }}
