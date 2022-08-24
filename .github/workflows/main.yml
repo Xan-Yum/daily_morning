@@ -23,7 +23,6 @@ jobs:
     - run: pip install -r ./requirements.txt && python ./main.py
 
     env:
-      EXAM_DATE: ${{ secrets.EXAM_DATE }}
       APP_ID: ${{ secrets.APP_ID }}
       APP_SECRET: ${{ secrets.APP_SECRET }}
       TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
@@ -33,3 +32,4 @@ jobs:
       START_DATE: ${{ secrets.START_DATE }}
       CITY1: ${{ secrets.CITY1 }}
       BIRTHDAY1: ${{ secrets.BIRTHDAY1 }}
+      EXAM_DATE: ${{ secrets.EXAM_DATE }}
