@@ -82,7 +82,7 @@ data = {"date_str": {'value': '📅日期：'},
         "birthday_str1": {'value': '🎂距离我的生日还有：'},
         "birthday_str2": {'value': '🎂距离你的生日还有：'},
 
-        "date": {"value": today1, "color": get_random_color()},
+        "date": {"value": "📅日期：today1", "color": get_random_color()},,
         "city": {"value": ci, "color": get_random_color()},
         "weather": {"value": wea, "color": get_random_color()},
         "temperature": {"value": temperature, "color": get_random_color()},
