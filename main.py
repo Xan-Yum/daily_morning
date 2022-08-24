@@ -7,7 +7,8 @@ import os
 import random
 
 today = datetime.now()
-today1 = datetime.now().strftime('%Y-%m-%d')
+week_list = ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"]
+today1 = datetime.now().strftime('%Y-%m-%d') + ' ' + week_list[today.weekday()]
 
 city = os.environ['CITY']
 city1 = os.environ['CITY1']
