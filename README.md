@@ -38,19 +38,21 @@ Github Actions 的定时任务，在 workflow 的定义是 0 0 * * *，是 UTC �
 天气：{{ 4.DATA }}
 当前温度：{{ 5.DATA }}
 气温：{{ 6.DATA }}
-本土新增：{{ f.DATA }} 例
-本土无症状：{{ g.DATA }} 例
-城市：{{ 8.DATA }}
-天气：{{ 9.DATA }}
-当前温度：{{ a.DATA }}
-气温：{{ b.DATA }}
-本土新增：{{ h.DATA }} 例
-本土无症状：{{ i.DATA }} 例
-距离考试还有：{{ c.DATA }} 天
-距离我的生日还有：{{ e0.DATA }} 天
-距离你的生日还有：{{ e1.DATA }} 天
-我们已经相恋{{ 7.DATA }}天啦
-{{ d.DATA }}
+本土新增：{{ 7.DATA }} 例
+本土无症状：{{ 8.DATA }} 例
+城市：{{ 9.DATA }}
+天气：{{ a.DATA }}
+当前温度：{{ b.DATA }}
+气温：{{ c.DATA }}
+本土新增：{{ d.DATA }} 例
+本土无症状：{{ e.DATA }} 例
+距离考试还有：{{ f.DATA }} 天
+距离我的生日还有：{{ g0.DATA }} 天
+距离你的生日还有：{{ g1.DATA }} 天
+我们已经相恋{{ i.DATA }}天啦
+{{ j.DATA }}
+
+阳历生日需要改为h0，h1...
 
 需定义字段：
 APP_ID
@@ -65,3 +67,4 @@ BIRTHDAY
 BIRTHDAY1
 START_DATE
 EXAM_DATE
+URL
